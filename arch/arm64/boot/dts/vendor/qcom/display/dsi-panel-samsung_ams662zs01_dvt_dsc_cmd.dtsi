@@ -58,7 +58,7 @@
 		qcom,mdss-dsi-display-timings {
 			timing0{
 				qcom,mdss-mdp-transfer-time-us = <12000>;
-				qcom,mdss-dsi-panel-framerate = <60>;
+				qcom,mdss-dsi-panel-framerate = <120>;
 				qcom,mdss-dsi-panel-width = <1080>;
 				qcom,mdss-dsi-panel-height = <2400>;
 
@@ -114,17 +114,17 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					/*Frequency Change*/
 					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 60 00 00
+					39 01 00 00 00 00 03 60 08 00
 					39 01 00 00 00 00 02 F7 0F
 					39 01 00 00 00 00 03 F0 A5 A5
 					15 01 00 00 00 00 02 53 20
 				];
 				qcom,mdss-dsi-timing-switch-command = [
-					/* 60hz Transition */
+					/* 120hz Transition */
 					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 60 00 00
+					39 01 00 00 00 00 03 60 08 00
 					39 01 00 00 00 00 02 F7 0F
-					39 01 00 00 08 00 03 F0 A5 A5
+					39 01 00 00 10 00 03 F0 A5 A5
 				];
 				qcom,mdss-dsi-post-on-backlight = [
 					/* Display On */
@@ -448,7 +448,7 @@
 				qcom,mdss-dsi-panel-read-register-close-state = "dsi_hs_mode";
 			};
 			timing1{
-				qcom,mdss-dsi-panel-framerate = <120>;
+				qcom,mdss-dsi-panel-framerate = <60>;
 				qcom,mdss-dsi-panel-width = <1080>;
 				qcom,mdss-dsi-panel-height = <2400>;
 				qcom,mdss-dsi-h-front-porch = <8>;
@@ -496,17 +496,17 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					/*Frequency Change*/
 					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 60 08 00
+					39 01 00 00 00 00 03 60 00 00
 					39 01 00 00 00 00 02 F7 0F
 					39 01 00 00 00 00 03 F0 A5 A5
 					15 01 00 00 00 00 02 53 20
 				];
 				qcom,mdss-dsi-timing-switch-command = [
-					/* 120hz Transition */
+					/* 60hz Transition */
 					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 60 08 00
+					39 01 00 00 00 00 03 60 00 00
 					39 01 00 00 00 00 02 F7 0F
-					39 01 00 00 10 00 03 F0 A5 A5
+					39 01 00 00 08 00 03 F0 A5 A5
 				];
 				qcom,mdss-dsi-post-on-backlight = [
 					/* Display On */
