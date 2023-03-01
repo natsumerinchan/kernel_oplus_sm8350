@@ -40,8 +40,6 @@ setup_environment() {
 setup_kernelsu() {
     cd $KERNEL_PATH
     git submodule init && git submodule update --remote
-    cd KernelSU && git pull
-    cd $KERNEL_PATH
 }
 
 build_kernel() {
